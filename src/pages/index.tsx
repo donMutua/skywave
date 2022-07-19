@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { Contact } from "../components/Contacts";
 import Footer from "../components/Footer";
 import { HeroComponent } from "../components/Herocomponent";
@@ -11,8 +10,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>SkyWave</title>
-        <meta name="description" content="SkyWave recruting" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <meta name="description" content="" />
       </Head>
       <HeroComponent />
       <WhatWeDo />

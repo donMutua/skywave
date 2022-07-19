@@ -1,122 +1,113 @@
 import {
-  Badge,
   Box,
   Button,
+  Flex,
   Heading,
   HStack,
   Img,
   Stack,
   Text,
-  useColorModeValue as mode,
 } from "@chakra-ui/react";
 import * as React from "react";
+import { HiChevronRight } from "react-icons/hi";
 
 export const HeroComponent = () => {
   return (
-    <Box
-      as="section"
-      bg={mode("gray.50", "gray.800")}
-      pb="24"
-      pos="relative"
-      px={{
-        base: "6",
-        lg: "12",
-      }}
-    >
-      <Box maxW="7xl" mx="auto">
+    <Box bg="gray.800" as="section" minH="140px" position="relative">
+      <Box py="32" position="relative" zIndex={1}>
         <Box
           maxW={{
-            lg: "md",
-            xl: "xl",
+            base: "xl",
+            md: "7xl",
           }}
-          pt={{
-            base: "20",
-            lg: "40",
+          mx="auto"
+          px={{
+            base: "6",
+            md: "8",
           }}
-          pb={{
-            base: "16",
-            lg: "24",
-          }}
+          color="white"
         >
-          <Heading
-            as="h1"
-            size="3xl"
-            lineHeight="1"
-            fontWeight="extrabold"
-            letterSpacing="tight"
-          >
-            Let us help you recruit the best{" "}
-            <Box
-              as="mark"
-              color={mode("blue.500", "blue.300")}
-              bg="transparent"
+          <Box maxW="xl">
+            <Heading as="h1" size="3xl" fontWeight="extrabold">
+              Build relationship with the your customers
+            </Heading>
+            <Text
+              fontSize={{
+                md: "2xl",
+              }}
+              mt="4"
+              maxW="lg"
             >
-              talent for your business
-            </Box>
-          </Heading>
-          <Text
-            mt={4}
-            fontSize="xl"
-            fontWeight="medium"
-            color={mode("gray.600", "gray.400")}
-          >
-            We carry out talent acquisition on behalf of our client ensuring
-            that the client gets the best persons to fill the positions they
-            intend to fill
-          </Text>
-          <Stack
-            direction={{
-              base: "column",
-              sm: "row",
-            }}
-            spacing="4"
-            mt="8"
-          >
-            <Button
-              size="lg"
-              colorScheme="blue"
-              height="14"
-              px="8"
-              fontSize="md"
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </Text>
+            <Stack
+              direction={{
+                base: "column",
+                md: "row",
+              }}
+              mt="10"
+              spacing="4"
             >
-              Talk to Us
-            </Button>
-          </Stack>
+              <Button
+                as="a"
+                href="#"
+                colorScheme="blue"
+                px="8"
+                rounded="full"
+                size="lg"
+                fontSize="md"
+                fontWeight="bold"
+              >
+                Get Started for Free
+              </Button>
+              <HStack
+                as="a"
+                transition="background 0.2s"
+                justify={{
+                  base: "center",
+                  md: "flex-start",
+                }}
+                href="#"
+                color="white"
+                rounded="full"
+                fontWeight="bold"
+                px="6"
+                py="3"
+                _hover={{
+                  bg: "whiteAlpha.300",
+                }}
+              >
+                <span>Talk to Sales</span>
+                <HiChevronRight />
+              </HStack>
+            </Stack>
+          </Box>
         </Box>
       </Box>
-      <Box
-        pos={{
-          lg: "absolute",
-        }}
-        insetY={{
-          lg: "0",
-        }}
-        insetEnd={{
-          lg: "0",
-        }}
-        bg="gray.50"
-        w={{
-          base: "full",
-          lg: "50%",
-        }}
-        height={{
-          base: "96",
-          lg: "full",
-        }}
-        sx={{
-          clipPath: {
-            lg: "polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%)",
-          },
-        }}
+      <Flex
+        id="image-wrapper"
+        position="absolute"
+        insetX="0"
+        insetY="0"
+        w="full"
+        h="full"
+        overflow="hidden"
+        align="center"
       >
-        <Img
-          height="100%"
-          width="100%"
-          objectFit="cover"
-          src="https://images.unsplash.com/photo-1556379069-7c1b1b8990b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2906&q=80"
-          alt="Lady working"
-        />
-      </Box>
+        <Box position="relative" w="full" h="full">
+          <Img
+            src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80"
+            alt="Main Image"
+            w="full"
+            h="full"
+            objectFit="cover"
+            objectPosition="top bottom"
+            position="absolute"
+          />
+          <Box position="absolute" w="full" h="full" bg="blackAlpha.600" />
+        </Box>
+      </Flex>
     </Box>
   );
 };
