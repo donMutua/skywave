@@ -31,7 +31,13 @@ export function WhatWeDo() {
           h={"full"}
         />
       </Flex>
-      <Container maxW={"8xl"} zIndex={10} position={"relative"}>
+      <Container
+        maxW={"8xl"}
+        zIndex={10}
+        position={"relative"}
+        marginLeft={"2.5"}
+        marginRight={"2.5"}
+      >
         <Stack direction={{ base: "column", lg: "row" }}>
           <Stack
             color={"gray.400"}
@@ -110,16 +116,15 @@ const stats = [
         best persons to fill the positions they intend to fill. We provide a
         holistic solution to ensure that our clients focus on their core
         business therefore increasing strategic efficiencies in their business
-        operations. We are committed to ensuring our clients get highly
-        qualified, competent and precise talent in the market for a given job
-        profile. We Recruit Staff personnel, technical talent, and unskilled
-        talent including but not limited to housekeepers, maids, gardeners and
-        labourers. Skyways Global Services Ltd further offers vacancy
-        advertising, short listing and interviewing services and finally
-        recommends a short list for further consideration by our client or the
-        best candidate to fill a given position. A team of highly qualified and
-        experienced Human Resource experts are involved in carrying out this
-        exercise using HR best practices
+        operations. We recruit personnel ranging from lower to senior positions
+        including but not limited to managers, accountants, hospitality
+        industry, security guards, drives , cleaners among others. Skyways
+        Global Services Ltd further offers vacancy advertising, short listing
+        and interviewing services and finally recommends a short list for
+        further consideration by our client or the best candidate to fill a
+        given position. A team of highly qualified and experienced Human
+        Resource experts are involved in carrying out this exercise using HR
+        best practices
       </>
     ),
   },

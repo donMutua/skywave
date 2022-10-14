@@ -65,7 +65,7 @@ export default function Footer() {
           width={100}
           height={80}
         />
-        <Text>© 2022 Skywave Global Services</Text>
+        <Text>© 2022 SkyWays Global Services</Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />

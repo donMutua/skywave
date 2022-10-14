@@ -56,6 +56,18 @@ export function Contact() {
                       >
                         +254723464058
                       </Button>
+
+                      <Button
+                        size="md"
+                        height="48px"
+                        width="100%"
+                        variant="ghost"
+                        color="#DCE2FF"
+                        _hover={{ border: "2px solid #1C6FEB" }}
+                        leftIcon={<MdPhone color="#1970F1" size="20px" />}
+                      >
+                        +254722839848
+                      </Button>
                       <Button
                         size="md"
                         height="48px"
@@ -65,7 +77,18 @@ export function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}
                       >
-                        hello@skywaveglobal.co.ke
+                        info@skywaysglobal.co.ke
+                      </Button>
+                      <Button
+                        size="md"
+                        height="48px"
+                        width="100%"
+                        variant="ghost"
+                        color="#DCE2FF"
+                        _hover={{ border: "2px solid #1C6FEB" }}
+                        leftIcon={<MdEmail color="#1970F1" size="20px" />}
+                      >
+                        hr@skywaysglobal.co.ke
                       </Button>
                       <Button
                         size="md"
@@ -76,7 +99,7 @@ export function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
                       >
-                        Ruprani House, 2nd floor Suite No 207,
+                        Ruprani House, 2nd floor, Suite No 207, Nairobi, Kenya.,
                       </Button>
                     </VStack>
                   </Box>

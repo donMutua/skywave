@@ -10,8 +10,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>SkyWave</title>
-        <meta name="description" content="SkyWave recruting" />
+        <title>SkyWays</title>
+        <meta name="description" content="SkyWays recruting" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <HeroComponent />
