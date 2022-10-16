@@ -10,9 +10,19 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>SkyWays</title>
+        <title>SkyWays Global Services</title>
         <meta name="description" content="SkyWays recruting" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <meta
+          name="description"
+          content="Skyways Global Services Ltd is a human resource consultancy firm"
+        />
+        <meta
+          property="og:description"
+          content="Skyways Global Services Ltd is a human resource consultancy firm"
+        />
+        <meta property="og:url" content="https://skywaysglobal.com" />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeroComponent />
       <WhatWeDo />
